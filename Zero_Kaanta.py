@@ -25,7 +25,6 @@ def symbol_choice():
 
     return (player1_symbol, player2_symbol)
 
-
 def input_check(pos):
 
     check = False
