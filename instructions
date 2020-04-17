@@ -1,0 +1,7 @@
+Instructions
+If your guess is within 10 of the number, the game will return "WARM!"
+If it's further than 10 away from the number, it will return "COLD!"
+On all subsequent turns, if a guess is
+closer to the number than the previous guess it will return "WARMER!"
+If farther from the number than the previous guess, return "COLDER!"
+Let's see in how much guesses you can win!
