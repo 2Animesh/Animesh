@@ -1,0 +1,34 @@
+win = False
+count = 0
+current_diff = 0
+
+from random import randint
+target = randint(0,100)
+
+while win == False:
+    guess = int(input('Enter your guess (between 0,100) '))
+    count += 1
+    prev = current_diff
+    current_diff = abs(target-guess)
+    
+    if current_diff == 0:
+        print(f'Victory in {count} attempts !!')
+        win = True
+        break
+    
+    if guess in range(0,101):
+        if count == 1:
+            if current_diff > 10:
+                print('Cold guess')
+            else:
+                print('Warm Guess')
+                
+        else:
+            if prev < current_diff:
+                print('Colder Guess')
+            else:
+                print('Warmer Guess')
+                
+        
+    else:
+        print('Out of Bounds!')        
